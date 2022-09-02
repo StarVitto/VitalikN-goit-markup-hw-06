@@ -67,7 +67,45 @@
                 <use href="./images/icons.svg#icon-close-black"></use>
               </svg>
             </button>
-            <p></p>
+
+            <form class="modal-form">
+              <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+              <div class="form-field">
+                <label class="form-label" for="name">Ім'я</label>
+                <input class="form-input text-name" type="text" name="name" id="name" />
+                <svg class="name-svg" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+
+                <label class="form-label" for="tel">Телефон</label>
+                <input class="form-input" type="tel" name="tel" id="tel" />
+                <svg class="name-svg" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-phone-tel"></use>
+                </svg>
+
+                <label class="form-label" for="mail">Ім'я</label>
+                <input class="form-input" type="email" name="mail" id="mail" />
+                <svg class="name-svg" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-email-modal"></use>
+                </svg>
+
+                <label class="form-label" for="comment">Коментар</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="polisy" />
+                <label for="polisy">Погоджуюся з розсилкою та приймаю Умови договору</label>
+              </div>
+
+              <button class="button-modal" type="submit">Відправити</button>
+            </form>
           </div>
         </div>
       </section>
@@ -371,7 +409,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="footer-socials">
           <p class="title-svg">приєднуйтесь</p>
           <ul class="list footer-list-link">
             <li class="list-svg">
@@ -399,6 +437,21 @@
               ></a>
             </li>
           </ul>
+        </div>
+
+        <div class="footer-search">
+          <p class="title-svg">Підпишіться на розсилку</p>
+          <div class="footer-mail-input">
+            <label class="footer-mail"
+              ><input class="footer-input" type="email" name="mail" placeholder="E-mail"
+            /></label>
+            <button type="button" class="button-mail">
+              Підписатися
+              <svg class="footer-svg svg-btn" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
