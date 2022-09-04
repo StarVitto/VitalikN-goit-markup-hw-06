@@ -306,20 +306,26 @@
 
         <div class="footer-search">
           <p class="title-svg">Підпишіться на розсилку</p>
-          <div class="footer-mail-input">
-            <!-- action="" -->
-            <form>
-              <label class="footer-mail"
-                ><input class="footer-input" type="email" name="mail" placeholder="E-mail"
-              /></label>
-            </form>
-            <button type="button" class="button-mail">
+
+          <!-- action="" -->
+          <form class="footer-mail-input">
+            <label class="footer-mail" for="footer-mail"
+              ><input
+                class="footer-input"
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                id="footer-mail"
+                required
+            /></label>
+
+            <button type="submit" class="button-mail">
               Підписатися
               <svg class="footer-svg svg-btn" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
