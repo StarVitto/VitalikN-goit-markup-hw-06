@@ -522,6 +522,7 @@ img {
 }
 
 .checkbox-label-link {
+  margin-left: 5px;
   text-decoration-line: underline;
 
   color: var(--accent-color);
